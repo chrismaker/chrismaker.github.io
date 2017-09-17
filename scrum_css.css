@@ -94,7 +94,7 @@ a {color: white;}
     background-size: cover;
 }
 
-img {
+img1 {
 	display: block;
 	margin-top: -27px;
 	margin-right: -27px;
@@ -113,9 +113,16 @@ img {
 }
 
 .left {
-    position: absolute;
-    left: 45px;
-    width: 150px;
-    border: 3px solid #818181;
+	position: absolute;
+	left: 45px;
+	width: 150px;
+	border: 3px solid #818181;
+	vertical-align: middle;
+	bottom: 13px;
+	
+}
+
+.center {
+    width: 100%;
     vertical-align: middle; 
 }
