@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+h1 {
+	color: white;
+	font: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 60px;
+	font-stretch: expanded;
+	text-shadow: 5px 4px black;
+	text-align: center;
+	font-weight: 400;
+	padding-left: 20px;
+	line-height: 15px;    
+}
+
+table{
+	width:100%;
+	text-align: right;
+	align-content: flex-end;
+	
+}
+
+td{
+	color: white;
+}
+
+.left-div {
+    float: left;
+    width: 20%;
+    height: 101px;
+    margin-right:0px;
+    background-color: rgb(249, 247, 247);
+	
+}
+.right-div {
+	margin-left: 0px;
+	background-color: rgb(207, 16, 32);
+	width: 80%;
+	height: 101px;
+	float: right;
+}
+
+
+h2 {
+	color: black;
+	font-weight: bold;
+	font-family: script;
+}
+
+
+.leftblob {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	color: #ABA1A2;
+	background-color: #9099A2;
+	text-align: left;
+	float: left;
+	height: 100px;
+	width: 55%;
+	border-radius: 25px;
+    padding: 20px;
+	margin-top: 20px;
+}
+.rightblob {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	color: #0E0C0C;
+	background-color: #818181;
+	float: right;
+	border-radius: 25px;
+	padding: 20px;
+	width: 30%;
+	height: 100px;
+	margin-top: 20px;
+}
+
+a {color: white;}
+
+
+.parallax {
+    /* The image used */
+    background-image: url("background.jpg");
+
+    /* Set a specific height */
+    height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
