@@ -4,26 +4,25 @@
 <meta charset="utf-8">
 <title>EduScrum</title>
 <link href="scrum_css.css" rel="stylesheet" type="text/css">
- <script type = "text/javascript">
-          function displayNextImage() {
-              x = (x === images.length - 1) ? 0 : x + 1;
-              document.getElementById("img").src = images[x];
-          }
 
-          function displayPreviousImage() {
-              x = (x <= 0) ? images.length - 1 : x - 1;
-              document.getElementById("img").src = images[x];
-          }
+<script>
+var slideIndex = 0;
+carousel();
 
-          function startTimer() {
-              setInterval(displayNextImage, 3000);
-          }
-
-          var images = [], x = -1;
-          images[0] = "training1.jpg";
-          images[1] = "training2.jpg";
-          images[2] = "training3.jpg";
-      </script>
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+	
+	
 </head>
 <body>
 	<table bgcolor="#cf1020">
@@ -53,21 +52,24 @@
  
 </table>
 <br>
+<div class="parallax">
 
-<div class="leftblob" onload = "startTimer()">
+<div class="leftblob">
+	<H3> EduScrum Training Programs </H3>
+	<h3> Click here for Management Programs </h3>
+	<h3> Click here for Teaching Programs </h3>
+	
+	</div>
 
- >
-       <img class="left" src="training1.jpg"/>
-       <button type="button" onclick="displayPreviousImage()">Previous</button>
-       <button type="button" onclick="displayNextImage()">Next</button>
-  
-
-
+<div class="rightblob">
+	
+	<p> meh </p>
+	
+	
 </div>
-
-<div class="rightblob">Content for  class "rightblob" Goes Here</div>
 <div class="leftblob">Content for  class "leftblob" Goes Here</div>
 <div class="rightblob">Content for  class "rightblob" Goes Here</div>
+	</div>
 
 
 

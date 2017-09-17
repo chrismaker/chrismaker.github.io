@@ -4,6 +4,26 @@
 <meta charset="utf-8">
 <title>EduScrum</title>
 <link href="scrum_css.css" rel="stylesheet" type="text/css">
+	 <script type = "text/javascript">
+          function displayNextImage() {
+              x = (x === images.length - 1) ? 0 : x + 1;
+              document.getElementById("img").src = images[x];
+          }
+
+          function displayPreviousImage() {
+              x = (x <= 0) ? images.length - 1 : x - 1;
+              document.getElementById("img").src = images[x];
+          }
+
+          function startTimer() {
+              setInterval(displayNextImage, 3000);
+          }
+
+          var images = [], x = -1;
+          images[0] = "training1.jpg";
+          images[1] = "training2.jpg";
+          images[2] = "training3.jpg";
+      </script>
 </head>
 <body>
 	<table bgcolor="#cf1020">
@@ -13,7 +33,7 @@
 	    </tr> 
 </table>
 
-<div class="left-div"> <img src="\Scrum-org-logo.png" height="70%" width="100%" alt="scrum image"/></div>
+<div class="left-div"> <img src="Scrum-org-logo.png" height="70%" width="100%" alt="scrum image"/></div>
 <div class="right-div">
   <h1>Scrum in Education </h1>
   
@@ -36,7 +56,23 @@
 
 <div class="parallax">
 
-<div class="leftblob">hey left blob</div>
+<div class="leftblob" onload = "startTimer()">
+
+ 
+       <img class="left" src="training1.jpg"/>
+       <button type="button" onclick="displayPreviousImage()">Previous</button>
+       <button type="button" onclick="displayNextImage()">Next</button>
+  
+	<H2> blah blah blah </H2>
+	<br>
+	<p> blah blah blah</p>
+	<br>
+	<p> blah blah blah</p>
+	<br>
+	<p> blah blah blah</p>
+
+
+</div>
 <div class="rightblob"><h2>Testimonials</h2></div>
 <div class="leftblob">Content for  class "leftblob" Goes Here</div>
 <div class="rightblob">Content for  class "rightblob" Goes Here</div>
