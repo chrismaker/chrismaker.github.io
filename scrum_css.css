@@ -2,14 +2,15 @@
 
 h1 {
 	color: white;
-	font: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 60px;
 	font-size: 60px;
 	font-stretch: expanded;
 	text-shadow: 5px 4px black;
 	text-align: center;
 	font-weight: 400;
 	padding-left: 20px;
-	line-height: 15px;    
+	line-height: 15px;
+	font-family: arial;
 }
 
 h3 {top:0px;
@@ -32,18 +33,19 @@ td{
 }
 
 .left-div {
-    float: left;
-    width: 20%;
-    height: 101px;
-    margin-right:0px;
-    background-color: rgb(249, 247, 247);
+	float: left;
+	width: 20%;
+	height: 100%;
+	margin-right: 0px;
+	background-color: rgb(249, 247, 247);
+	margin-top: -31px;
 	
 }
 .right-div {
 	margin-left: 0px;
 	background-color: rgb(207, 16, 32);
 	width: 80%;
-	height: 101px;
+	height: 100%;
 	float: right;
 }
 
@@ -64,7 +66,7 @@ h2 {
 	background-color: #9099A2;
 	text-align: left;
 	float: left;
-	height: 100px;
+	height: 200px;
 	width: 55%;
 	border-radius: 25px;
     padding: 20px;
@@ -81,11 +83,14 @@ h2 {
 	border-radius: 25px;
 	padding: 20px;
 	width: 30%;
-	height: 100px;
+	height: 200px;
 	margin-top: 20px;
 }
 
-a {color: white;}
+a {
+	color: white;
+	font-family: arial;
+}
 
 
 .parallax {
@@ -135,4 +140,13 @@ img1 {
     vertical-align: middle; 
 }
 
-.mySlides {display:none;}
+.mySlides {display:none;
+			width: 200px;
+			height: 200px
+}
+
+.icon-bar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+}

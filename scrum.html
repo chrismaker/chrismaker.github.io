@@ -4,34 +4,17 @@
 <meta charset="utf-8">
 <title>EduScrum</title>
 <link href="scrum_css.css" rel="stylesheet" type="text/css">
-	 <script type = "text/javascript">
-          function displayNextImage() {
-              x = (x === images.length - 1) ? 0 : x + 1;
-              document.getElementById("img").src = images[x];
-          }
-
-          function displayPreviousImage() {
-              x = (x <= 0) ? images.length - 1 : x - 1;
-              document.getElementById("img").src = images[x];
-          }
-
-          function startTimer() {
-              setInterval(displayNextImage, 3000);
-          }
-
-          var images = [], x = -1;
-          images[0] = "training1.jpg";
-          images[1] = "training2.jpg";
-          images[2] = "training3.jpg";
-      </script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<table bgcolor="#cf1020">
-		<tr><td></td>
-		<td><img src="cart.png" width="25" height="25" align="right" alt=""/></td>
-	    <td align="right"><form >Search: <input type="text" name="fname" align="right"></form> </td> 
+		<tr>
+		<td></td>
+		<td></td>
+	    <td align="right"><img src="cart.png" width="25" height="25" align="right" alt=""<form >Search: <input type="text" name="fname" align="right"></form> 
+	    </td> 
 	    </tr> 
-</table>
+	</table>
 
 <div class="left-div"> <img src="Scrum-org-logo.png" height="70%" width="100%" alt="scrum image"/></div>
 <div class="right-div">
@@ -56,20 +39,35 @@
 
 <div class="parallax">
 
-<div class="leftblob" onload = "startTimer()">
+<div class="leftblob">
+  <img class="mySlides" src="training1.jpg">
+<img class="mySlides" src="training2.jpg">
+<img class="mySlides" src="training3.jpg">
+<img class="mySlides" src="training4.png">
 
- 
-       <img class="left" src="training1.jpg"/>
-       <button type="button" onclick="displayPreviousImage()">Previous</button>
-       <button type="button" onclick="displayNextImage()">Next</button>
-  
-	<H2> blah blah blah </H2>
-	<br>
-	<p> blah blah blah</p>
-	<br>
-	<p> blah blah blah</p>
-	<br>
-	<p> blah blah blah</p>
+
+
+<script>
+	var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+}
+</script>
+
+
 
 
 </div>
@@ -79,6 +77,29 @@
 
 
 	</div>
+	
+	
+ <div class="icon-bar">
+  <a href="scrum.html"><i class="fa fa-facebook">></i></a> 
+  <a href="about.html"><i class="fa fa-twitter"></i></a> 
+  <a href="eduscrum.html"><i class="fa fa-map-marker"></i></a> 
+  <a href="membership.html"><i class="fa fa-users"></i></a>
+  <a href="services.html"><i class="fa fa-calendar"></i></a> 
+   <a href="forum.html"><i class="fa fa-calendar"></i></a>
+</div>
+
+<h2>Want more information? contact us!</h2>
+
+<div id="overlay" onclick="off()">
+<div id="text"><a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-pinterest"></a>
+<a href="#" class="fa fa-snapchat-ghost"></a>
+<center><h6>Our email address : visit.eduscrum@busy.com</h6></center>
+<center><h6>Our phone number : +61 385 294 671</h6></center></div>
+</div>
+
 
 </body>
 </html>
