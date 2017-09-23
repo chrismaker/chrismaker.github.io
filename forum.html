@@ -9,7 +9,7 @@
 	<table bgcolor="#cf1020">
 		<tr><td></td>
 		<td><img src="cart.png" width="25" height="25" align="right" alt=""/></td>
-	    <td align="right"><form >Search: <input type="text" name="fname" align="right"></form> </td> 
+	    <td align="right"><form>Search: <input type="text" name="fname" align="right"></form> </td> 
 	    </tr> 
 </table>
 
@@ -33,18 +33,177 @@
  
 </table>
 <br>
-<div class="parallax">
-<div class="leftblob">Content for  class "leftblob" Goes Here</div>
+<div class="parallaxf">
 
-<div class="rightblob"> <article>
-  <h4>Testimonials</h4>
-  <p>Scrum has been an amazing help to our College, projects are getting done so fast</p>
-</article> </div>
-<div class="leftblob">Content for  class "leftblob" Goes Here</div>
-<div class="rightblob">Content for  class "rightblob" Goes Here</div>
+	<h2 class="h2m"> EduScrum Forum </h2>
+	
+	<h3 class="h2p"> Share your ideas on our Forum with other EduScrummers </h3>
+	
+	<h2 class="h2p"> Select an existing topic or begin a new post </h2>
+	
+	 <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Click Here to Choose a Forum Topic</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#">Classroom Scrum</a>
+    <a href="#">Management</a>
+    <a href="#">Training</a>
+    <a href="#">Software</a>
+    <a href="#">Materials</a>
+    <a href="#">Misc</a>
+  </div>
+  <script>
+	  /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+} 
+		 </script>
+</div> 
+
+
+
+
+<table width="100%" border="0" align="left" cellpadding="0" cellspacing="1" bgcolor="#6d7993">
+<tr>
+<form id="form1" name="form1" method="post" action="add_new_topic.php">
+<td>
+
+<table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#FFFFFF">
+<tr>
+<td colspan="2" bgcolor="#E6E6E6" align="left"><h2 class="h2m">New EduScrum Topic</h2> </td>
+</tr>
+	</table>
+
+<table>
+<tr>
+<td width="10%" align="left"><h4>Topic</h4></td>
+<td width="2%">:</td>
+<td width="84%" align="left"><input name="topic" type="text" id="topic" size="50" /></td>
+</tr>
+<tr>
+<td width="10%" align="left"><h4>Detail</h4></td>
+<td width="2%">:</td>
+<td width="84%" align="left"><input name="topic" type="text" id="topic" size="50" /></td>
+</tr>
+<tr>
+<td width="10%" align="left"><h4>Name</h4></td>
+<td width="2%">:</td>
+<td width="84%" align="left"><input name="topic" type="text" id="topic" size="50" /></td>
+</tr>
+<tr>
+<td width="10%" align="left"><h4>eMail</h4></td>
+<td width="2%">:</td>
+<td width="84%" align="left"><input name="topic" type="text" id="topic" size="50" /></td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td align="left"><input type="submit" name="Submit" value="Submit" /> 
+<input type="reset" name="Submit2" value="Reset" /></td>
+</tr>
+</table>
+
+
+
+</td>
+</form>
+</tr>
+</table>
+
 
 
 	</div>
+	<div class="icon-bar">
+<!-- I got these buttons from simplesharebuttons.com -->
+<div id="share-buttons">
+    
+    <!-- Buffer -->
+    <a href="https://bufferapp.com/add?url=https://simplesharebuttons.com&amp;text=Simple Share Buttons" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/buffer.png" alt="Buffer" />
+    </a>
+    
+    <!-- Digg -->
+    <a href="http://www.digg.com/submit?url=https://simplesharebuttons.com" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/diggit.png" alt="Digg" />
+    </a>
+    
+    <!-- Email -->
+    <a href="mailto:?Subject=Simple Share Buttons&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 https://simplesharebuttons.com">
+        <img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
+    </a>
+ 
+    <!-- Facebook -->
+    <a href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+    </a>
+    
+    <!-- Google+ -->
+    <a href="https://plus.google.com/share?url=https://simplesharebuttons.com" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" />
+    </a>
+    
+    <!-- LinkedIn -->
+    <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://simplesharebuttons.com" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />
+    </a>
+    
+    <!-- Pinterest -->
+    <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());">
+        <img src="https://simplesharebuttons.com/images/somacro/pinterest.png" alt="Pinterest" />
+    </a>
+    
+    <!-- Print -->
+    <a href="javascript:;" onclick="window.print()">
+        <img src="https://simplesharebuttons.com/images/somacro/print.png" alt="Print" />
+    </a>
+    
+    <!-- Reddit -->
+    <a href="http://reddit.com/submit?url=https://simplesharebuttons.com&amp;title=Simple Share Buttons" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" />
+    </a>
+    
+    <!-- StumbleUpon-->
+    <a href="http://www.stumbleupon.com/submit?url=https://simplesharebuttons.com&amp;title=Simple Share Buttons" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/stumbleupon.png" alt="StumbleUpon" />
+    </a>
+    
+    <!-- Tumblr-->
+    <a href="http://www.tumblr.com/share/link?url=https://simplesharebuttons.com&amp;title=Simple Share Buttons" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/tumblr.png" alt="Tumblr" />
+    </a>
+     
+    <!-- Twitter -->
+    <a href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+    </a>
+    
+    <!-- VK -->
+    <a href="http://vkontakte.ru/share.php?url=https://simplesharebuttons.com" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/vk.png" alt="VK" />
+    </a>
+    
+    <!-- Yummly -->
+    <a href="http://www.yummly.com/urb/verify?url=https://simplesharebuttons.com&amp;title=Simple Share Buttons" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/yummly.png" alt="Yummly" />
+    </a>
 
+</div>
+	</div>
 </body>
 </html>

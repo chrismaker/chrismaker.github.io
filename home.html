@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>visit the south of france </title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">      
+
+<style>
+
+.parallax2 {
+    /* The image used */
+    background-image: url("homeparallax.jpg");
+
+
+    /* Set a specific height */
+    min-height: 300px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("parallax1.jpg");
+
+    /* Set a specific height */
+    min-height: 300px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {margin:0;}
+
+.icon-bar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+}
+
+.icon-bar a {
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+.active {
+    background-color: #444 !important;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.next {
+    background-color: #444;
+    color: white;
+}
+
+.round {
+    border-radius: 50%;
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #000000;
+  color: white;
+}
+
+.fa-twitter {
+  background: #000000;
+  color: white;
+}
+
+  .fa-instagram {
+  background: #000000;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #000000;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #000000;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;margin:0}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+h1 {color:#02CDFF}
+
+table{text-align: center;
+     width: 100%;
+    color:#0099ff
+    padding-top: 20px;
+    padding-bottom: 20px;}
+
+h2 {color:#02CDFF }
+
+#heading1 h2{color:#02CDFF }
+         p{color: black;}
+
+#pages-links{background-color: #ADADAD;
+          border: 3px solid #0099ff;
+          border-style: dotted;} 
+
+#next-page{}
+
+body{background-color: #FFFFFF;
+          font-family: 'Lato', sans-serif;
+          margin-right: 70px;
+          margin-left: 70px;
+          margin-bottom: 100px}
+                                                    </style>
+         </head>
+         <body> 
+
+<h1><ul><center>Home</center></ul></h1> 
+        
+        <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="main1.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="main2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="main3.jpg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			 </div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+         <div class="icon-bar">
+  <a href="home.html"><i class="fa fa-home"></i></a> 
+  <a href="howtogetthere.html"><i class="fa fa-plane"></i></a> 
+  <a href="whattodonext.html"><i class="fa fa-map-marker"></i></a> 
+  <a href="culture.html"><i class="fa fa-users"></i></a>
+  <a href="perfectplanning.html"><i class="fa fa-calendar"></i></a> 
+</div>
+
+<h2>Want more information? contact us!</h2>
+
+<div id="overlay" onclick="off()">
+<div id="text"><a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-pinterest"></a>
+<a href="#" class="fa fa-snapchat-ghost"></a>
+<center><h6>Our email address : visit.cotedazur@gmail.com</h6></center>
+<center><h6>Our phone number : +61 385 294 671</h6></center></div>
+</div>
+
+<div style="padding:20px">
+  <button onclick="on()">contact us!</button>
+</div>
+
+<script>
+function on() {
+    document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+    document.getElementById("overlay").style.display = "none";
+}
+</script>
+ 
+<div class="parallax"></div>
+
+<div style="height:100px;background-color:white;font-size:36px">
+
+</div>
+
+ <table id="heading1">
+	<tr>
+		<td><img src="paysage home 1.jpg" width="300"></td>
+		<td><h2>What you will find on this website</h2>
+         <p>This website has been created to help peoples spend the best time in the south of france. It will propose the cheapest plane tickets to get to france, it will share the best activities available, you will learn a little bit more bout france and it's culture, the best free website to learn french and the things you should absolutely do to have the perfect planning.This website has been created to help peoples spend the best time in the south of france. It will propose the cheapest plane tickets to get to france, it will share the best activities available, you will learn a little bit more bout france and it's culture, the best free website to learn french and the things you should absolutely do to have the perfect planning.This website has been created to help peoples spend the best time in the south of france. It will propose the cheapest plane tickets to get to france, it will share the best activities available, you will learn a little bit more bout france and it's culture, the best free website to learn french and the things you should absolutely do to have the perfect planning.</p>
+</td>
+
+	</tr>
+</table>
+         <table id="heading1">
+    <tr>
+        <td><img src="paysage home 2.jpg" width="300"></td>
+        <td><h2>Where is the Cote D'azur ? </h2>
+         <p>the south of france is situated in the south end of france. But this website is just talking about the south eastern part of france, the Cote d'Azur. The cote d'azur is a region neighboring Italy. It has a moderatly hot climate in summer and moderatly cold climate during winter. it is a safe place to go for hollodays, and is the perfect family trip for this summer! Why go to paris when you can go to the south of france the south of france is situated in the south end of france. But this website is just talking about the south eastern part of france, the Cote d'Azur. The cote d'azur is a region neighboring Italy. It has a moderatly hot climate in summer and moderatly cold climate during winter. it is a safe place to go for hollodays, and is the perfect family trip for this summer! Why go to paris when you can go to the south of france ?</p>
+</td>
+
+<div class="parallax2"></div>
+
+    </tr>
+</table>
+<table id="next-page">
+    <tr>
+        <td><a href="howtogetthere.html"><img src="next page.jpg" alt="next page" height="50"></a></td>
+    </tr>
+</table>
+         
+
+</body>
+</html>
