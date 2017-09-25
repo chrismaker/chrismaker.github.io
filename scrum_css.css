@@ -89,8 +89,9 @@ h2 {
 h2b
 
 {
-	color:black;
-	font-size:20px;
+	color: black;
+	font-size: 20px;
+	margin-left: 40px;
 	
 }
 
@@ -110,7 +111,7 @@ p
 
 {
 	color: black;
-	font-size: 12px;
+	font-size: 14px;
 	margin-left: 50px;
 	
 }
@@ -128,7 +129,7 @@ p
 	height: 200px;
 	width: 55%;
 	border-radius: 25px;
-    padding: 20px;
+	padding: 20px;
 	margin-top: 20px;
 }
 .rightblob {
@@ -298,4 +299,15 @@ display: inline;
 #content .col {
 	float: left;
 	margin-left: 5px;
+	font-size: 13px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	color: white;
+}
+
+li
+{
+	color: black;
+	font-family: arial;
+	margin: 40;
+	font-size: 14px;
 }
