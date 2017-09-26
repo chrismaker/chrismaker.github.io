@@ -102,8 +102,26 @@ h2b
 {
 	color: black;
 	font-size: 20px;
-	margin-left: 40px;
+	margin-left: 45px;
 	
+	}
+
+h2m
+
+{
+	color: black;
+	font-size: 20px;
+	margin-left: 2px;
+	
+	}
+
+
+h2bm
+
+{
+	color: black;
+	font-size: 20px;
+	margin-left: 64px;
 }
 
 h4{
@@ -152,7 +170,10 @@ p
 	background-color: #818181;
 	float: right;
 	border-radius: 25px;
-	padding: 20px;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
 	width: 30%;
 	height: 200px;
 	margin-top: 20px;
@@ -255,7 +276,7 @@ img1 {
 
 #share-buttons img {
 width: 35px;
-padding: 5px;
+padding: 14px;
 border: 0;
 box-shadow: 0;
 display: inline;
@@ -314,6 +335,39 @@ display: inline;
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
 	color: white;
 }
+
+#content .cola {
+	float: left;
+	margin-left: 11px;
+	font-size: 13px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	color: white;
+	width: 40%;
+}
+
+
+
+#content .colb {
+	float: right;
+	margin-left: 60px;
+	font-size: 13px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	color: white;
+	width: 30%;
+	
+}
+
+#content .colt {
+	float: left;
+	margin-left: 40px;
+	font-size: 13px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	color: white;
+	width: 30%;
+	font-style: italic;
+	
+}
+
 
 li
 {
