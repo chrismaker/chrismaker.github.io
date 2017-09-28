@@ -586,10 +586,10 @@ button {
 .plus    { background-color: #c1dcb7; background-color: #96858F; }
 .premium { background-color: #bad6c8; background-color: #9099A2; }
 .pro     { background-color: #bbd3dc; background-color: #6d7993; }
-#header-basic { background: url(starter.jpg) no-repeat; }
-#header-plus { background: url(class.jpg) no-repeat; }
-#header-premium { background: url(leadership.jpg) no-repeat; }
-#header-pro { background: url(premium.jpg) no-repeat; }
+#header-basic { background: url(starter.JPG) no-repeat; }
+#header-plus { background: url(class.JPG) no-repeat; }
+#header-premium { background: url(leadership.JPG) no-repeat; }
+#header-pro { background: url(premium.JPG) no-repeat; }
 #feature-table th span { position: absolute; top: -9999px; left: -9999px; }
 
 
