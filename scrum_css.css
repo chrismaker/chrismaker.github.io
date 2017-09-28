@@ -146,6 +146,15 @@ p
 	
 }
 
+p1
+
+{
+	color: black;
+	font-size: 10px;
+	margin-left: 50px;
+	
+}
+
 
 .leftblob {
 	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
@@ -161,6 +170,7 @@ p
 	border-radius: 25px;
 	padding: 20px;
 	margin-top: 20px;
+	margin-bottom: 5px;
 }
 .rightblob {
 	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
@@ -178,6 +188,7 @@ p
 	width: 30%;
 	height: 200px;
 	margin-top: 20px;
+	margin-left: 30px;
 }
 
 .centerblobt
@@ -192,7 +203,26 @@ p
 	text-align: left;
 	float: center;
 	height: 1000px;
-	width: 80%;
+	width: 60%;
+	border-radius: 25px;
+	padding: 20px;
+	margin-top: 20px;
+	margin-left: 20%;
+}
+
+.centerblobm
+
+ {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	font-size: 17px;
+	font-style: normal;
+	font-weight: normal;
+	color: #0D0C0C;
+	background-color: #9099A2;
+	text-align: left;
+	float: center;
+	height: 10px;
+	width: 60%;
 	border-radius: 25px;
 	padding: 20px;
 	margin-top: 20px;
@@ -294,9 +324,12 @@ img1 {
 }
 
 .icon-bar {
-    width: 100%;
-    background-color: #555;
-    overflow: auto;
+	width: 100%;
+	background-color: #555;
+	overflow: auto;
+	margin-top: 20px;
+	border-radius: 20px;
+	margin-bottom: 8px;
 }
 
 
@@ -356,7 +389,7 @@ display: inline;
 
 #content .col {
 	float: left;
-	margin-left: 5px;
+	margin-left: 7px;
 	font-size: 13px;
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
 	color: white;
@@ -497,13 +530,19 @@ input[type=texta], input[type=password] {
 
 /* Set a style for all buttons */
 button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
+	background-color: #d5d5d5;
+	color: #070707;
+	padding: 14px 20px;
+	margin-top: 8px;
+	margin-right: 0;
+	margin-left: 0;
+	margin-bottom: 8px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	font-size: 14px;
+	border-radius: 20px;
+	font-family: arial;
 }
 
 /* Extra styles for the cancel button */
@@ -535,4 +574,113 @@ button {
     .cancelbtn, .signupbtn {
         width: 100%;
     }
+	
+}
+
+.w3-tooltip,.w3-display-container{position:relative}.w3-tooltip .w3-text{display:none}.w3-tooltip:hover .w3-text{display:inline-block; color:white;}
+
+#feature-table th { height: 120px; padding-bottom: 14px; vertical-align: bottom; }
+
+
+.basic   { background-color: #d5e4bc; background-color: #d5d5d5; }
+.plus    { background-color: #c1dcb7; background-color: #96858F; }
+.premium { background-color: #bad6c8; background-color: #9099A2; }
+.pro     { background-color: #bbd3dc; background-color: #6d7993; }
+#header-basic { background: url(starter.jpg) no-repeat; }
+#header-plus { background: url(class.jpg) no-repeat; }
+#header-premium { background: url(leadership.jpg) no-repeat; }
+#header-pro { background: url(premium.jpg) no-repeat; }
+#feature-table th span { position: absolute; top: -9999px; left: -9999px; }
+
+
+/* Three columns side by side */
+.column {
+    float: left;
+    width: 20%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+
+}
+
+/* Add some shadows to create a card effect */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+    padding: 0 1px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+	background-color: #9099A2;
+	width: 100px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.button:hover {
+    background-color: #9099A2;
+} 
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
 }
