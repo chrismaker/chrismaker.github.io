@@ -4,6 +4,25 @@
 <meta charset="utf-8">
 <title>EduScrum</title>
 <link href="scrum_css.css" rel="stylesheet" type="text/css">
+
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+	
+	
 </head>
 <body>
 	<table bgcolor="#cf1020">
@@ -17,15 +36,13 @@
 
 <div class="left-div"> <a href="scrum.html"><img class="center" src="edlogo.jpg"
 												 alt="scrum image"/></a></div>
- 
- 
- <div class="right-div">
+<div class="right-div">
   <br><h1>Scrum in Education </h1>
   
 </div>
    
-
-<div class="topnav" id="myTopnav">
+    
+ <div class="topnav" id="myTopnav">
   <a href="scrum.html">Home</a>
   <a href="about.html">About Us</a>
   <a href="eduscrum.html">About EduScrum</a>
@@ -35,91 +52,34 @@
 </div> 
 <br>
 <div class="parallax">
-<br>
-	
-	<table width="20%" bgcolor="#6d7993" align="center">
-	<tr><td>
-		<h3 class="h3s"><center>Scroll over images for more information</center></h3></td>
-		</tr></table>
-		
-		
-		<div class="leftblob">
-		
-
-	<h2><center>The Team</center></h2>
-
-
-<div class="container">
-  <img src="corp.jpeg" width="150px" height="150px" alt="Avatar" class="imgb">
-  <div class="overlay">
-	  <div class="text"><a href="team.html">Click here for Team Page</a></div>
-  </div>
-</div>
-
-
-
-</div>
-
-<div class="rightblob">
-
-	
-  <div class="col">
-	  <h2><center>Our Mission</center></h2>
-	</div>
-
-<div class="col">
-<div class="container">
-  <img src="mission.jpg" width="150px" height="150px" alt="Avatar" class="imgb">
-  <div class="overlay">
-	  <div class="text">
-	  <a href="misc.html#mission">Go to the Mission Statement</a>
-	  
-  </div>
-	</div>
-</div>
-	
-	</div>	
-	
-</div>
-
 
 <div class="leftblob">
+<a name="mission"></a>
+	<h2> Mission Statement </h2>
 	
+	<p> Here's the Mission Statement</p>
+		
 	
-	<h2><center>Our Partners</center></h2>
-
-
-<div class="container">
-  <img src="partnership.png" width="150px" height="150px" alt="Avatar" class="imgb">
-  <div class="overlay">
-	  <div class="text">
-	  <a href="misc.html#partners">See our partners</a>
-  </div>
-  
 </div>
-</div>
-	</div>
+
 <div class="rightblob">
+	<a name="partners"></a>
+	<h2>Partners</h2>
+	<br>
+	<p>Here's a list of partners</p>
+	<ul>
+		<li>Partner One</li>
+		<li>Partner Two</li>
+		<li>Partner Three</li>
+	</ul>
 	
-	<h2><center>Our Services</center></h2>
-<div id="content">
 	
-  <div class="col">
 
-<div class="container">
-  <img src="edservices.jpg" width="150px" height="150px" alt="Avatar" class="imgb">
-  <div class="overlay">
-	  <div class="text"><a href="about.html">Our<br>Services</a></div></div>
 	</div>
-	</div>	
-    </div>
-	</div>
-	
-	
-	<div class="icon-bar">
+
+<div class="icon-bar">
 	<br>
 	<h2 class="h2m"> Get in touch with us </h2>
-
 <!-- I got these buttons from simplesharebuttons.com -->
 <div id="share-buttons">
     
@@ -195,5 +155,6 @@
 
 </div>
 	</div>
+
 </body>
 </html>
