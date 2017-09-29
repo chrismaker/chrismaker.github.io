@@ -165,7 +165,7 @@ p1
 	background-color: #9099A2;
 	text-align: left;
 	float: left;
-	height: 200px;
+	height: 220px;
 	width: 55%;
 	border-radius: 25px;
 	padding: 20px;
@@ -186,7 +186,7 @@ p1
 	padding-left: 20px;
 	padding-bottom: 20px;
 	width: 30%;
-	height: 200px;
+	height: 220px;
 	margin-top: 20px;
 	margin-left: 30px;
 }
@@ -330,15 +330,19 @@ img1 {
 	margin-top: 20px;
 	border-radius: 20px;
 	margin-bottom: 8px;
+	margin-left: 0px;
 }
 
 
 #share-buttons img {
-width: 35px;
-padding: 14px;
-border: 0;
-box-shadow: 0;
-display: inline;
+	width: 35px;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	border: 0;
+	box-shadow: 0;
+	display: inline;
 }
 
  /* Dropdown Button */
@@ -595,15 +599,16 @@ button {
 
 /* Three columns side by side */
 .column {
-    float: left;
-    width: 20%;
-    margin-bottom: 16px;
-    padding: 0 8px;
+	float: left;
+	width: 45%;
+	margin-bottom: 16px;
+	padding: 0 8px;
+	margin-left: 16px;
 }
 
 /* Display the columns below each other instead of side by side on small screens */
 
-}
+
 
 /* Add some shadows to create a card effect */
 .card {
@@ -613,6 +618,13 @@ button {
 /* Some left and right padding inside the container */
 .container {
     padding: 0 1px;
+}
+
+@media (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
 }
 
 /* Clear floats */
@@ -659,7 +671,52 @@ button {
     font-size: 17px;
 }
 
+#snackbara {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#snackbarb {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
 #snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+#snackbara.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+
+#snackbarb.show {
     visibility: visible;
     -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
     animation: fadein 0.5s, fadeout 0.5s 2.5s;

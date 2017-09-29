@@ -7,11 +7,15 @@
 </head>
 <body>
 	<table bgcolor="#cf1020">
-		<tr><td></td>
-		<td><img src="cart.png" width="25" height="25" align="right" alt=""/></td>
-	    <td align="right"><form >Search: <input type="text" name="fname" align="right"></form> </td> 
+		<tr>
+		<td></td>
+		<td></td>
+	    <td align="right"><img src="cart.png" width="25" height="25" align="right" alt=""<form >Search: <input type="text" name="fname" align="right"></form> 
+	    </td> 
 	    </tr> 
-</table>
+	</table>
+
+
 
 <div class="left-div"> <a href="scrum.html"><img class="center" src="edlogo.jpg"
 												 alt="scrum image"/></a></div>
@@ -44,8 +48,8 @@
 	  <p> eduScrum uses the processes, roles and tools<br>
 	  of Scrum. Every lesson starts with the stand-up <br>
 	  which sees to it that there is a focus and a bond,<br>
-	  this also puts students into work mode. <br>
-		  <strong><small>ref</small></strong>:<a href="http://eduscrum.nl/en/about-eduscrum"> EduScrum Website</a>
+	  this also puts students into work mode.
+		  <strong><small>ref</small></strong>:<a href="http://eduscrum.nl/en/about-eduscrum"> EduScrum Website</a></p>
   
 	<br>
     <br>
@@ -60,19 +64,19 @@
 
 <div class="rightblob">
 
-	<h2b>Resources</h2b>
+	<h2b>Resources</h2b>   <small>click for details</small>
 	
 <button onclick="myFunction()">Books to Read</button>
 
-<div id="snackbar">Twice the work in half the time, Jeff Sutherland</div>
+	<div id="snackbar"><a href="https://www.amazon.com/Scrum-Doing-Twice-Work-Half-ebook/dp/B00JI54HCU" target="_blank">Twice the work in half the time, Jeff Sutherland</a></div>
 
-<button onclick="myFunction()">eduScrum Implementation Guide</button>
+<button onclick="myFunctiona()">eduScrum Implementation Guide</button>
 
-<div id="snackbar">This guide will get you started</div>
+	<div id="snackbara"><a href="guide.pdf" target="_blank">This guide will get you started</a></div>
 
-<button onclick="myFunction()">Videos to watch</button>
+<button onclick="myFunctionb()">Videos to watch</button>
 
-<div id="snackbar">Check out these vidoes</div>
+	<div id="snackbarb"> <a href="https://www.youtube.com/embed/5PIS6PzaINY" target="_blank">Check out these vidoes</a></div>
 
 
 <script>
@@ -82,22 +86,40 @@ function myFunction() {
     setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 }
 </script>
-
 	
+
+<script>
+function myFunctiona() {
+    var x = document.getElementById("snackbara")
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+</script>
+
+
+<script>
+function myFunctionb() {
+    var x = document.getElementById("snackbarb")
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+</script>
 </div>
 <div class="leftblob">
 	
 	<div id="content">
   <div class="col">
-   <iframe width="150" height="150" src="https://www.youtube.com/embed/5PIS6PzaINY" frameborder="0" allowfullscreen></iframe>
+   <iframe width="150" height="150" src="https://www.youtube.com/embed/h0sGRGbMlrQ" frameborder="0" allowfullscreen></iframe>
  
   </div>
   <div class="col">
-	  <h2b>EduScrum</h2b>
-	  <p> eduScrum uses the processes, roles and tools<br>
-	  of Scrum. Every lesson starts with the stand-up <br>
-	  which sees to it that there is a focus and a bond,<br>
-	  this also puts students into work mode. <br>
+	  <h2b>EduScrum Ignite Talk</h2b>
+	  <p> In eduScrum learning takes center stage;<br>
+	  learn smarter, improve collaboration and get to<br>
+	  know yourself better. This way of working also<br>
+	  creates more responsibility, fun and energy <br>
+	  that lead to better results and shorter <br>
+	  turnaround times.<br>
 		  <strong>ref</strong>:<a href="http://eduscrum.nl/en/about-eduscrum"> EduScrum Website</a>
   
 	<br>
